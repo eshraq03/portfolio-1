@@ -1,0 +1,487 @@
+/* استيراد الخط "Poppins" من Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* إعدادات الخط الأساسي */
+* {
+    font-family: 'Poppins', sans-serif; /* تعيين الخط لجميع العناصر */
+    margin: 0; /* إزالة الهوامش الافتراضية */
+    padding: 0; /* إزالة الحشوات الافتراضية */
+    box-sizing: border-box; /* تعيين طريقة احتساب الأبعاد */
+    scroll-behavior: smooth; /* تمكين التمرير السلس باستخدام CSS */
+}
+
+/* تنسيق الهيدر */
+header {
+    background-color: #f0f0f0; /* تحديد خلفية الهيدر */
+    width: 100%; /* عرض الهيدر ليغطي كامل العرض */
+    position: fixed; /* جعل الهيدر ثابت في أعلى الصفحة */
+    z-index: 999; /* تحديد الأولوية للظهور فوق العناصر الأخرى */
+    display: flex; /* استخدام flexbox لترتيب العناصر */
+    justify-content: space-between; /* توزيع العناصر على أطراف الهيدر */
+    align-items: center; /* محاذاة العناصر عموديًا في المنتصف */
+    padding: 10px 200px; /* إضافة مسافة حول المحتوى داخل الهيدر */
+}
+
+/* تنسيق الشعار */
+.logo {
+    text-decoration: none; /* إزالة التأثيرات على النص */
+    color: #3a6cf4; /* تحديد لون النص */
+    text-transform: uppercase; /* تحويل النص إلى حروف كبيرة */
+    font-weight: 700; /* جعل الخط عريض */
+    font-size: 1.8em; /* تحديد حجم الخط */
+}
+
+/* تنسيق الروابط في شريط التنقل */
+.navigation a {
+    color: #3a6cf4; /* تحديد لون الروابط */
+    text-decoration: none; /* إزالة التأثيرات على النص */
+    font-size: 1.1em; /* تحديد حجم الخط */
+    font-weight: 500; /* تحديد سمك الخط */
+    padding-left: 30px; /* إضافة مسافة بين الروابط */
+}
+
+/* تأثيرات عند التمرير على الروابط */
+.navigation a:hover {
+    color: #601cfc; /* تغيير اللون عند التمرير */
+}
+
+/* تنسيق الأقسام الرئيسية */
+section {
+    padding: 100px 200px; /* إضافة مسافة حول محتوى الأقسام */
+}
+
+/* تنسيق القسم الرئيسي */
+.main {
+    width: 100%; /* عرض القسم الرئيسي كامل */
+    min-height: 100vh; /* تحديد الحد الأدنى للارتفاع ليغطي كامل الشاشة */
+    display: flex; /* استخدام flexbox لترتيب العناصر */
+    padding-left: 17px; /* إضافة مسافة من الجهة اليسرى */
+    background: url(image/000.jpg) no-repeat; /* إضافة صورة خلفية */
+    background-size: cover; /* تغطية الخلفية لكامل العنصر */
+    background-position: center; /* تحديد مكان الخلفية */
+    background-attachment: fixed; /* تثبيت الخلفية أثناء التمرير */
+}
+
+/* تنسيق النص في القسم الرئيسي */
+.main h2 {
+    color: #fff; /* تحديد لون النص */
+    font-size: 1.4em; /* تحديد حجم الخط */
+    font-weight: 500; /* تحديد سمك الخط */
+}
+
+/* تنسيق النص داخل العنصر span في القسم الرئيسي */
+.main h2 span {
+    display: inline-block; /* جعل العنصر span يعمل ككتلة مدمجة */
+    margin-top: 10px; /* إضافة مسافة من الأعلى */
+    color: #4e9eff; /* تحديد لون النص */
+    font-size: 3em; /* تحديد حجم الخط */
+    font-weight: 600; /* تحديد سمك الخط */
+}
+
+/* تنسيق النص في العنوان الرئيسي داخل القسم */
+.main h3 {
+    color: #000; /* تحديد لون النص */
+    font-size: 1em; /* تحديد حجم الخط */
+    font-weight: 400; /* تحديد سمك الخط */
+    letter-spacing: 1px; /* إضافة مسافة بين الحروف */
+    margin-top: 10px; /* إضافة مسافة من الأعلى */
+    margin-bottom: 30px; /* إضافة مسافة من الأسفل */
+    margin-left: 10px; /* إضافة مسافة من الجهة اليسرى */
+}
+
+/* تنسيق الأزرار في الصفحة الرئيسية */
+.main-btn {
+    color: #fff; /* تحديد لون النص */
+    background-color: #3a6cf4; /* تحديد لون الخلفية */
+    text-decoration: none; /* إزالة التأثيرات على النص */
+    font-size: 1.1em; /* تحديد حجم الخط */
+    font-weight: 600; /* تحديد سمك الخط */
+    display: inline-block; /* جعل العنصر يعمل ككتلة مدمجة */
+    padding: 0.9375em 2.1875em; /* إضافة مسافات داخل الزر */
+    letter-spacing: 1px; /* إضافة مسافة بين الحروف */
+    border-radius: 15px; /* تحديد زاوية مستديرة للزر */
+    margin-bottom: 40px; /* إضافة مسافة من الأسفل */
+    transition: 0.7s ease; /* إضافة تأثير انتقال عند التفاعل مع الزر */
+}
+
+/* تأثيرات عند التمرير على الأزرار */
+.main-btn:hover {
+    background-color: #0a49f6; /* تغيير اللون عند التمرير */
+    transform: scale(1.1); /* تكبير الزر عند التمرير */
+}
+
+/* تنسيق أيقونات الوسائط الاجتماعية */
+.social-icons a {
+    color: #fff; /* تحديد لون الأيقونات */
+    font-size: 1.7em; /* تحديد حجم الأيقونات */
+    padding-right: 30px; /* إضافة مسافة من الجهة اليمنى */
+}
+
+/* تنسيق قسم "عنّا" */
+.about {
+    width: 100%; /* عرض القسم بالكامل */
+    min-height: 100vh; /* تحديد الحد الأدنى للارتفاع */
+    display: flex; /* استخدام flexbox لترتيب العناصر */
+    padding-left: 17px; /* إضافة مسافة من الجهة اليسرى */
+    background-size: cover; /* تغطية الخلفية بكامل العنصر */
+    background-position: center; /* تحديد مكان الخلفية */
+    background-attachment: fixed; /* تثبيت الخلفية أثناء التمرير */
+}
+
+/* تنسيق النص في قسم "عنّا" */
+.about h2 {
+    color: #fff; /* تحديد لون النص */
+    font-size: 1.4em; /* تحديد حجم الخط */
+    font-weight: 500; /* تحديد سمك الخط */
+}
+
+/* تنسيق النص داخل العنصر span في قسم "عنّا" */
+.about h2 span {
+    display: inline-block; /* جعل العنصر span يعمل ككتلة مدمجة */
+    margin-top: 10px; /* إضافة مسافة من الأعلى */
+    color: #4e9eff; /* تحديد لون النص */
+    font-size: 3em; /* تحديد حجم الخط */
+    font-weight: 600; /* تحديد سمك الخط */
+}
+
+/* تنسيق العناوين داخل قسم "عنّا" */
+.about.h3 {
+    color: #000; /* تحديد لون النص */
+    font-size: 1em; /* تحديد حجم الخط */
+    font-weight: 400; /* تحديد سمك الخط */
+    letter-spacing: 1px; /* إضافة مسافة بين الحروف */
+    margin-top: 10px; /* إضافة مسافة من الأعلى */
+    margin-bottom: 30px; /* إضافة مسافة من الأسفل */
+    margin-left: 10px; /* إضافة مسافة من الجهة اليسرى */
+}
+
+/* تنسيق العناوين الرئيسية في الصفحة */
+.title {
+    display: flex; /* استخدام flexbox لترتيب العناصر */
+    justify-content: center; /* محاذاة العناصر في المنتصف */
+    color: #3a6cf4; /* تحديد لون النص */
+    font-size: 2.2em; /* تحديد حجم الخط */
+    font-weight: 800; /* جعل الخط عريض */
+    margin-bottom: 30px; /* إضافة مسافة من الأسفل */
+}
+
+/* تنسيق المحتوى داخل الصفحة */
+.content {
+    display: flex; /* استخدام flexbox لترتيب العناصر */
+    justify-content: center; /* محاذاة العناصر في المنتصف */
+    flex-direction: row; /* ترتيب العناصر بشكل أفقي */
+    flex-wrap: wrap; /* السماح بتوزيع العناصر في أكثر من سطر */
+}
+
+/* تنسيق بطاقات المحتوى */
+.card {
+    background-color: #fff; /* تحديد لون الخلفية */
+    width: 21.25em; /* تحديد عرض البطاقة */
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 0.15); /* إضافة ظل للبطاقة */
+    border-radius: 10px; /* إضافة زاوية مستديرة */
+    padding: 25px; /* إضافة حشوة داخل البطاقة */
+    margin: 15px; /* إضافة مسافة حول البطاقة */
+    transition: 0.7s ease; /* إضافة تأثير انتقال */
+}
+
+/* تأثيرات عند التمرير على البطاقة */
+.card:hover {
+    transform: scale(1.1); /* تكبير البطاقة عند التمرير */
+}
+
+/* تنسيق الأيقونات داخل البطاقة */
+.card .icon {
+    color: #3a6cf4; /* تحديد لون الأيقونة */
+    font-size: 8em; /* تحديد حجم الأيقونة */
+    text-align: center; /* محاذاة الأيقونة في المنتصف */
+}
+
+/* تنسيق المعلومات داخل البطاقة */
+.info {
+    text-align: center; /* محاذاة النص في المنتصف */
+}
+
+/* تنسيق العناوين داخل المعلومات */
+.info h3 {
+    color: #3a6cf4; /* تحديد لون النص */
+    font-size: 1.2em; /* تحديد حجم الخط */
+    font-weight: 700; /* جعل الخط عريض */
+    margin: 10px; /* إضافة مسافة حول النص */
+}
+
+/* تنسيق قسم المشاريع */
+.projects {
+    background-color: #000016; /* تحديد خلفية القسم */
+}
+
+/* تنسيق محتوى قسم المشاريع */
+.projects .content {
+    margin-top: 30px; /* إضافة مسافة من الأعلى */
+}
+
+/* تنسيق بطاقات المشاريع */
+.project-card {
+    background-color: #fff; /* تحديد لون الخلفية */
+    border: 1px solid #fff; /* إضافة حد حول البطاقة */
+    min-height: 14em; /* تحديد الحد الأدنى للارتفاع */
+    width: 23em; /* تحديد العرض */
+    overflow: hidden; /* منع تجاوز المحتوى */
+    border-radius: 10px; /* إضافة زاوية مستديرة */
+    margin: 20px; /* إضافة مسافة حول البطاقة */
+    transition: 0.7s ease; /* إضافة تأثير انتقال */
+}
+
+/* تأثيرات عند التمرير على بطاقة المشروع */
+.project-card:hover {
+    transform: scale(1.1); /* تكبير البطاقة عند التمرير */
+}
+
+/* تأثيرات عند التمرير على صورة المشروع */
+.project-card:hover .project-image {
+    opacity: 0.9; /* تقليل شفافية الصورة عند التمرير */
+}
+
+/* تنسيق صورة المشروع */
+.project-image img {
+    width: 100%; /* جعل الصورة تغطي كامل العنصر */
+}
+
+/* تنسيق معلومات المشروع */
+.project-info {
+    padding: 1em; /* إضافة حشوة داخل العنصر */
+}
+
+/* تنسيق تصنيف المشروع */
+.project-category {
+    font-size: 0.8em; /* تحديد حجم الخط */
+    color: #000; /* تحديد لون النص */
+}
+
+/* تنسيق عنوان المشروع */
+.project-title {
+    display: flex; /* استخدام flexbox لترتيب العناصر */
+    justify-content: space-between; /* توزيع العناصر على الأطراف */
+    text-transform: uppercase; /* تحويل النص إلى حروف كبيرة */
+    font-weight: 800; /* جعل الخط عريض */
+    margin-top: 10px; /* إضافة مسافة من الأعلى */
+}
+
+/* تنسيق رابط التفاصيل في المشروع */
+.more-details {
+    text-decoration: none; /* إزالة التأثيرات على النص */
+    color: #3a6cf4; /* تحديد لون النص */
+}
+
+/* تأثيرات عند التمرير على رابط التفاصيل */
+.more-details:hover {
+    color: #601cfc; /* تغيير اللون عند التمرير */
+}
+
+/* تنسيق أيقونات وتفاصيل التواصل */
+.contact .icon {
+    font-size: 4.5em; /* تحديد حجم الأيقونة */
+}
+
+/* تنسيق عنوان معلومات التواصل */
+.contact .info h3 {
+    color: #000; /* تحديد لون النص */
+}
+
+/* تنسيق النص في معلومات التواصل */
+.contact .info p {
+    font-size: 1.5em; /* تحديد حجم الخط */
+}
+
+/* تنسيق الفوتر */
+.footer {
+    background-color: #000016; /* تحديد خلفية الفوتر */
+    color: #fff; /* تحديد لون النص */
+    padding: 2em; /* إضافة حشوة داخل الفوتر */
+    display: flex; /* استخدام flexbox لترتيب العناصر */
+    justify-content: space-between; /* توزيع العناصر على الأطراف */
+}
+
+/* تنسيق عنوان الفوتر */
+.footer-title {
+    font-size: 1.3em; /* تحديد حجم الخط */
+    font-weight: 600; /* جعل الخط عريض */
+}
+
+/* تنسيق اللون الخاص بـ "span" في الفوتر */
+.footer-title span {
+    color: #3a6cf4; /* تحديد لون النص */
+}
+
+/* تنسيق الأيقونات في الفوتر */
+.footer .social-icons a {
+    font-size: 1.3em; /* تحديد حجم الأيقونات */
+    padding: 0 12px 0 0; /* إضافة مسافة حول الأيقونات */
+}
+
+/* تخصيص التنسيق لشاشات صغيرة */
+@media (max-width:1023px) {
+    header {
+        padding: 12px 20px; /* تقليل الحشوة في الهيدر */
+    }
+
+    .navigation a {
+        padding-left: 10px; /* تقليل المسافة بين الروابط */
+    }
+
+    .title {
+        font-size: 1.8em; /* تقليل حجم الخط */
+    }
+
+    section {
+        padding: 80px 20px; /* تقليل الحشوة في الأقسام */
+    }
+
+    .main-content h2 {
+        font-size: 1em; /* تقليل حجم الخط */
+    }
+
+    .main-content h3 {
+        font-size: 1.6em; /* تقليل حجم الخط */
+    }
+
+    .content {
+        flex-direction: column; /* تغيير ترتيب العناصر إلى عمودي */
+        align-items: center; /* محاذاة العناصر في المنتصف */
+    }
+}
+
+/* تخصيص التنسيق لشاشات أصغر */
+@media (max-width:641px) {
+    body {
+        font-size: 12px; /* تقليل حجم الخط */
+    }
+
+    .main-content h2 {
+        font-size: 0.8em; /* تقليل حجم الخط */
+    }
+
+    .main-content h3 {
+        font-size: 1.4em; /* تقليل حجم الخط */
+    }
+}
+
+/* تخصيص التنسيق لشاشات صغيرة جدًا */
+@media (max-width:300px) {
+    body {
+        font-size: 10px; /* تقليل حجم الخط بشكل أكبر */
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .w3-container {
+    margin-top: 20px;
+  }
+  
+  h2 {
+    color: #051945;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
+  .w3-light-grey {
+    background-color: #f1f1f1;
+  }
+  
+  .w3-blue {
+    background-color: #2196F3; /* Blue color for py bar */
+  }
+  
+  .w3-green {
+    background-color: #4c54af; /* Green color for cpp bar */
+  }
+  
+  .w3-orange {
+    background-color: #0044ff; /* Orange color for dart bar */
+  }
+  
+ 
+    
+    
+
+/* تخصيص الوضع المظلم */
+.dark-mode {
+    background-color: black; /* تغيير الخلفية إلى اللون الأسود */
+    color: white; /* تغيير اللون إلى الأبيض */
+}
+
+/* تنسيق التواصل */
+.contact {
+    margin-top: 20px; /* إضافة مسافة من الأعلى */
+}
+
+/* تنسيق الحقول في نموذج الإدخال */
+.input-box {
+    display: flex; /* استخدام flexbox لترتيب العناصر */
+    flex-wrap: wrap; /* السماح بلف العناصر */
+    gap: 20px; /* إضافة مسافة بين الحقول */
+}
+
+/* تنسيق الحقل */
+.input-field, .textarea-field {
+    flex: 1; /* جعل العناصر تأخذ نفس المساحة */
+    position: relative; /* جعل الحقول تعتمد على موضعها النسبي */
+}
+
+/* تنسيق الإدخال والنصوص داخل الحقل */
+.input-field input,
+.textarea-field textarea {
+    width: 100%; /* جعل الحقل يشغل العرض الكامل */
+    padding: 10px; /* إضافة حشوة داخل الحقل */
+    font-size: 18px; /* تحديد حجم الخط */
+    border: 1px solid #ccc; /* إضافة حد حول الحقل */
+}
+
+/* تأثيرات التركيز على الحقل */
+.input-field .focus,
+.textarea-field .focus {
+    position: absolute; /* تحديد موقع العنصر */
+    bottom: 0; /* تحديد موقعه من الأسفل */
+    left: 0; /* تحديد موقعه من اليسار */
+    width: 100%; /* جعله يشغل كامل عرض الحقل */
+    height: 2px; /* تحديد سمك الخط */
+    background: #007BFF; /* تحديد اللون */
+    transition: 0.2s; /* إضافة تأثير الانتقال */
+    transform: scaleX(0); /* جعل العنصر غير مرئي */
+}
+
+/* تأثيرات التركيز عند الكتابة داخل الحقل */
+.input-field input:focus + .focus,
+.textarea-field textarea:focus + .focus {
+    transform: scaleX(1); /* جعل العنصر يظهر عند التركيز */
+}
+
+/* تنسيق الزر */
+.btn-box {
+    display: flex; /* استخدام flexbox لترتيب العناصر */
+    justify-content: center; /* محاذاة الزر في المنتصف */
+    margin-top: 20px; /* إضافة مسافة من الأعلى */
+}
+
+/* تنسيق الزر */
+.btn {
+    padding: 10px 20px; /* إضافة حشوة داخل الزر */
+    font-size: 18px; /* تحديد حجم الخط */
+    background: #007BFF; /* تحديد لون الخلفية */
+    color: white; /* تحديد لون النص */
+    border: none; /* إزالة الحدود */
+    cursor: pointer; /* تغيير شكل المؤشر عند التمرير */
+}
+
+/* تأثيرات عند التمرير على الزر */
+.btn:hover {
+    background: #0056b3; /* تغيير اللون عند التمرير */
+}
+
+/* تنسيق العنوان في قسم التواصل */
+.contact h2 {
+    color: #3a6cf4; /* تحديد لون النص */
+}

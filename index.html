@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- تضمين مكتبة Font Awesome للأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- تضمين ملف CSS الخاص بالمشروع -->
+    <link rel="stylesheet" href="style.css">
+    <title>ESHRAQ PORTOFOLIO</title>
+</head>
+<body>
+
+    <!-- الهيدر: يحتوي على الشعار والقائمة الملاحية -->
+    <header>
+        <a href="#" class="logo">eshraq</a>
+        <nav class="navigation">
+            <a href="#about">About me</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+         <!-- زر لتفعيل الوضع الليلي -->
+        <button id="toggleButton" onclick="toggleDarkMode()">Dark Mode</button>
+    </header>
+
+    <!-- تضمين ملف JavaScript الخاص بالمشروع -->
+    <script src="script.js"></script>
+
+    <!-- قسم المقدمة: عرض رسالة ترحيبية وتعريف بالمشروع -->
+    <section class="main">
+        <div>
+            <!-- تعريف بالمستخدم -->
+            <h2>Hello, I'm Eshraq<br><span>Eshraq Aliwan</span></h2>
+            <h3>
+                My name is Eshraq, I am a software engineer with a passion <br>for web development, software development, 
+                and artificial <br>intelligence. I have knowledge in programming,<br> web design, and AI to create innovative and impactful solutions.<br>
+                I am dedicated to enhancing my skills.
+            </h3>
+            <a href="#projects" class="main-btn">Show My Projects</a>
+
+            <!-- روابط وسائل التواصل الاجتماعي -->
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم "عنّي" -->
+    <section class="about" id="about">
+        <div>
+            <h2>Hello, I'm Eshraq<br><span>Software Engineer</span></h2>
+            <h3>
+                I am a student at Al-Merqab University, majoring in Information Technology
+                I aim to develop my skills in programming, software development, and networking.
+                 I have a passion for technology and strive to apply my academic knowledge in practical projects.
+                  I enjoy continuous learning and work on improving my skills in data analysis and solving technical problems.
+                My goal is to work in the field of [optional: programming, software development, or networking] after graduation.
+
+
+            </h3>
+        </div>
+    </section>
+
+    <!-- قسم المهارات -->
+    <section class="cards" id="skills">
+        <h2 class="title">Skills</h2>
+        <div class="content">
+            <!-- بطاقة مهارة تطوير الويب -->
+            <div class="card">
+                <div class="icon">
+                    <img src="image/html (1).png" />
+                </div>
+                <div class="info">
+                    <h3>Web Development</h3>
+                    <p>
+                        I can create simple and attractive websites using HTML and CSS. 
+                        I have worked on projects like portfolio sites and e-commerce websites. 
+                        I’m always trying to learn and improve my skills.
+                    </p>
+                </div>
+            </div>
+
+            <!-- بطاقة تطوير البرمجيات والتطبيقات -->
+            <div class="card">
+                <div class="icon">
+                    <img src="image/mobile-development.png" />
+                </div>
+                <div class="info">
+                    <h3>Software and Application Development</h3>
+                    <p>
+                        I can develop simple and functional software and applications. 
+                        I have experience using C++ to create programs and solve problems. 
+                        I’m always learning new ways to improve my skills and create better applications.
+                    </p>
+                </div>
+            </div>
+
+            <!-- بطاقة مهارات حل المشاكل -->
+            <div class="card">
+                <div class="icon">
+                    <img src="image/programming (1).png" />
+                </div>
+                <div class="info">
+                    <h3>Problem Solving in Programming</h3>
+                    <p>
+                        I can solve programming problems by breaking them down into smaller steps. 
+                        I use logical thinking and my knowledge of C++ to find solutions. 
+                        I’m always working on improving my problem-solving skills and learning new techniques.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم التقدم (Progress) -->
+    <section class="w3-container">
+        <h2>Progress</h2>
+        <!-- شريط التقدم للغة Python -->
+        <div class="w3-light-grey w3-round">
+            <div class="w3-container w3-blue w3-round" style="width:40%">Python 40%</div>
+        </div><br>
+        <!-- شريط التقدم للغة C++ -->
+        <div class="w3-light-grey w3-round-large">
+            <div class="w3-container w3-green w3-round-large" style="width:70%">C++ 70%</div>
+        </div><br>
+        <!-- شريط التقدم للغة Dart -->
+        <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-container w3-orange w3-round-xlarge" style="width:60%">Dart 60%</div>
+        </div>
+    </section>
+
+    <!-- قسم المشاريع -->
+    <section class="projects" id="projects">
+        <h2 class="title">Projects</h2>
+        <div class="content">
+            <!-- بطاقة المشروع الأول -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="image/456.jpg" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Websites</p>
+                    <strong class="project-title">
+                        <span>View</span>
+                        <a href="https://github.com/eshraq03/sorela.git" class="more-details">More details</a>
+                    </strong>
+                </div>
+            </div>
+
+            <!-- بطاقة المشروع الثاني -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="image/456.jpg" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Websites</p>
+                    <strong class="project-title">
+                        <span>View</span>
+                        <a href="#" class="more-details">More details</a>
+                    </strong>
+                </div>
+            </div>
+
+            <!-- بطاقة المشروع الثالث -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="image/789.jpg" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Websites</p>
+                    <strong class="project-title">
+                        <span>View</span>
+                        <a href="#" class="more-details">More details</a>
+                    </strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم التواصل -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact Me!</h2>
+        <form id="contactForm" action="#">
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" id="fullName" placeholder="Full Name" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="email" id="emailAddress" placeholder="Email Address" required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+            <div class="textarea-field">
+                <textarea id="message" cols="30" rows="10" placeholder="Message" required></textarea>
+                <span class="focus"></span>
+            </div>
+            <div class="btn-box btns">
+                <button type="submit" class="btn">Send</button> 
+</div> 
+</form>
+
+<!-- قسم التواصل - Let's work together -->
+<section class="cards contact" id="contact">
+    <h2 class="title">Let's work together</h2>
+    <div class="content">
+        <!-- بطاقة الاتصال بالهاتف -->
+        <div class="card">
+            <div class="icon">
+                <i class="fas fa-phone"></i>
+            </div>
+            <div class="info">
+                <h3>Phone</h3>
+                <p>+20122222222</p>
+            </div>
+        </div>
+        <!-- بطاقة الاتصال عبر البريد الإلكتروني -->
+        <div class="card">
+            <div class="icon">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <div class="info">
+                <h3>Email</h3>
+                <p>business@Eshraq.com</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- التذييل (footer) -->
+<footer class="footer">
+    <p class="footer-title">Copyrights @ <span>ESHRAQ Aliwan</span></p>
+    <!-- روابط وسائل التواصل الاجتماعي -->
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+</footer>
+
+</body>
+</html>
+
